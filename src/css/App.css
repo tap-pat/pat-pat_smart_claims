@@ -1,0 +1,211 @@
+.App {
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  /*position:fixed;*/
+  background-color: #222;
+  height: 150px;
+  width: 1349px;
+  color: white;
+  background: url("../images/myheader.svg") no-repeat 100% 0;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Info {
+  /*max-width: 1800px;*/
+  /*width: 579px;*/
+  /*margin-top:150px;*/
+  float:left;
+  width: 1349px;
+  height: 620px;
+  border: 0px;
+  border-style: solid;
+  background: url("../images/mybackground.svg") no-repeat 100% 0;
+  /*background-color: #233153;*/
+}
+
+.WelcomeText {
+  margin-left: 1210px;
+  font-size: 14px;
+}
+
+.Personal-info-edit {
+  max-width: 1700px;
+  width: 500px;
+  height: 560px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 0px ridge #ececec;
+  box-shadow: 0 0 1em;
+  overflow: hidden;
+  background-color: #ececec;
+}
+.Personal-info-edit span {
+  display: inline;
+  float:left;
+  width: 150px;
+  margin-top:6px;
+  text-align: left;
+  font-weight:bold;
+  font-size: 14px;
+  color:#222;
+}
+
+.Personal-info-edit h1 {
+  width: 350px;
+  font-size: 20px;
+  font-style: bolder;
+  color: #233153;
+}
+
+.Personal-info-edit input {
+  display: inline;
+  clear:left;
+  width: 300px;
+  height: 15px;
+  margin-bottom: 8px;
+  padding: 7px;
+  line-height: 1;
+  font-size: 0.85rem;
+  border: 1px;
+  border-style: solid;
+  border-color: #c0c0c0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.Personal-info-edit select {
+  display:inline;
+  width: 316px;
+  height: 33px;
+  margin-bottom: 8px;
+  float: left;
+  padding: 7px;
+  line-height: 1;
+  font-size: 0.85rem;
+  border: 1px;
+  border-style: solid;
+  border-color: #c0c0c0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 7px;
+  background: url("../images/ddarrow3.svg") no-repeat 100% 0;
+  background-color: white;
+}
+
+.Personal-info-edit textarea{
+  display:block;
+  width: 300px;
+  margin-left: 10px;
+  padding: 7px;
+  line-height: 2;
+  font-size: 1.0rem;
+  border: 1px;
+  border-style: solid;
+  border-color: #c0c0c0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 7px;
+  background: #fff;
+}
+
+.Personal-info-edit input:focus {
+  outline: 0px;
+  border: 1px;
+  border-style:solid;
+  border-color:#3d6dff;
+  border-radius: 7px;
+}
+
+.Personal-info-edit input:hover {
+  outline: 0px;
+  border: 1px;
+  border-style:solid;
+  border-color:#3d6dff;
+  border-radius: 7px;
+}
+
+.Personal-info-edit select:hover {
+  outline: 0px;
+  border: 1px;
+  border-style:solid;
+  border-color:#3d6dff;
+  border-radius: 7px;
+}
+
+.Personal-info-edit textarea:hover {
+  outline: 0px;
+  border: 1px;
+  border-style:solid;
+  border-color:#3d6dff;
+  border-radius: 7px;
+}
+
+.Personal-info-edit textarea:focus{
+  outline: 0px;
+  border: 1px;
+  border-style:solid;
+  border-color:#3d6dff;
+  border-radius: 7px;
+}
+.Personal-info-edit select:focus {
+  outline: 0px;
+  border: 1px;
+  border-style:solid;
+  border-color:#3d6dff;
+  border-radius: 7px;
+  background: url("../images/ddarrow3.svg") no-repeat 100% 0;
+  background-color: white;
+}
+
+.Personal-info-edit select:invalid {
+  color: gray;
+}
+
+.myButton {
+  margin-top: 8px;
+  margin-right: 10px;
+  background-color: #233153;
+  color: #ececec;
+  position: relative;
+  left: 345px;
+}
+
+.copyrightText {
+  clear:left;
+  width: 1349px;
+  height:25px;
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+  padding-top: 10px;
+  border: 0;
+  background-color: #222;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
