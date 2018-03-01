@@ -23,29 +23,33 @@ class App extends Component {
    console.log(JSON.stringify(infos));
    */
 
-   var savePage = 'http://10.215.148.13:8080/CalmRestApi/api/smartclaims/save';
+   var savePage = 'http://10.215.148.232:8080/CalmRestApi/api/smartclaims/save';
 
    const options = {
      method: 'POST',
      headers: {
-       'Content-Type': 'application/json',
+       'Content-Type': 'application/json'
      },
-     body: JSON.stringify(info),
-     mode: 'CORS',
+     body: JSON.stringify(info)
    };
 
-   console.log(JSON.stringify(info));
-
    const request = new Request(savePage, options);
-   const response = await fetch(request);
-   const status = await response.status;
+   const response = await fetch(request)
+      .then(response => {
+        if (response.status === 201){
+          alert('Claim has been successfully submitted.');
+        }
+        else if(response.status === 204){
+          console.log("Response Status:" + response.status);
+          alert('Policy Number does not exist.');
+        }
+        else {
+          console.log("Response Status:" + response.status);
+          alert('Claim is not successfuly submitted. Please try again later.');
+        }
+      })
+      .catch(err => {alert('Connection Refused.')});
 
-   console.log({status});
-   if (status === 404){
-     alert('404: Not Found');
-   } else if (status === 200){
-     alert('Claim has been successfully submitted.')
-   }
  }
 
   render() {
